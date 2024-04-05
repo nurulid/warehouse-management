@@ -5,7 +5,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <main className="flex h-dvh overflow-hidden">
       <Sidebar />
-      <section className="flex-grow">{children}</section>
+      <section className="flex-grow bg-[#FBFBFB]">{children}</section>
     </main>
   );
 }

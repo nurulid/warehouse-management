@@ -4,7 +4,9 @@ import { Search } from "./components/Search";
 export default function Page() {
   return (
     <>
-      <Search />
+      <div className="p-4 border-b border-secondary-200 mr-6">
+        <Search maxWidth="558px"/>
+      </div>
       <div className="h-[calc(100vh-65px)] overflow-scroll">
         <div className="p-6">
           <div className="mb-5">

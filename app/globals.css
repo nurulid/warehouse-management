@@ -3,7 +3,13 @@
 @tailwind utilities;
 
 @layer base {
-  /* .text-balance {
-    text-wrap: balance;
-  } */
+  body {
+    @apply text-base;
+  }
+}
+
+@layer components {
+  .sidebar__nav svg {
+    @apply fill-[--fill] size-4;
+  }
 }

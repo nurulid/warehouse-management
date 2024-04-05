@@ -32,8 +32,8 @@ const SidebarLink = (
         } as any
       }
       className={[
-        "py-2 px-4 rounded-[8px]",
-        (!active && !isDanger && "text-secondary-500") ||
+        "py-2 px-4 rounded-[8px] transition-all",
+        (!active && !isDanger && "text-secondary-500 hover:bg-secondary-200/40") ||
         (active && "text-primary bg-primary/10") ||
         (isDanger && "text-danger"),
       ].join(" ")}

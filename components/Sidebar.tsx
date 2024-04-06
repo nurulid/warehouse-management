@@ -14,6 +14,7 @@ import {
   LogoutIcon,
 } from "@/components/Icons";
 import Image from "next/image";
+import { UserMenu } from "./UserMenu";
 
 const SidebarLink = (
   props: PropsWithChildren<{ href: string; isDanger?: boolean; }>
@@ -81,7 +82,9 @@ export const Sidebar = () => {
           </ul>
         </nav>
         <div className="mt-auto">
-          <div className="dropdown">User Menu</div>
+          <div className="dropdown">
+            <UserMenu />
+          </div>
           <nav className="sidebar__nav">
             <ul>
               <SidebarLink href="#">

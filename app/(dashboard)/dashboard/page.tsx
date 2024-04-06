@@ -10,7 +10,7 @@ export default function Page() {
       <div className="h-[calc(100vh-65px)] overflow-scroll">
         <div className="p-6">
           <div className="mb-5">
-            <h2 className="text-2xl font-semibold">Hello, Enes</h2>
+            <h2 className="text-2xl font-semibold">Hello, Ernst</h2>
             <p className="text-gray-400">Warehouse Manager</p>
           </div>
           <div className="grid grid-cols-3 gap-10 h-full">

@@ -35,7 +35,7 @@ const SidebarLink = (
         "py-2 px-4 rounded-[8px] transition-all",
         (!active && !isDanger && "text-secondary-500 hover:bg-secondary-200/40") ||
         (active && "text-primary bg-primary/10") ||
-        (isDanger && "text-danger"),
+        (isDanger && "text-danger hover:bg-danger/10"),
       ].join(" ")}
     >
       <Link href={href} className="flex items-center gap-2 text-sm">
@@ -48,7 +48,7 @@ const SidebarLink = (
 export const Sidebar = () => {
   return (
     <section className="sidebar w-[240px] bg-secondary-75">
-      <div className="flex flex-col h-full p-6 my-2">
+      <div className="flex flex-col h-full px-6 py-8">
         <div className="mb-8 font-bold text-2xl">
           <Image src={"/brand-logo.svg"} width={32} height={32} alt="Logo" />
         </div>

@@ -6,11 +6,11 @@ import Image from "next/image";
 export default function Page() {
   return (
     <>
-      <div className="p-4 border-b border-secondary-200 mr-6">
+      <div className="p-4 border-b border-secondary-200 mr-0 md:mr-6">
         <Search maxWidth="558px"/>
       </div>
       <div className="h-[calc(100vh-65px)] overflow-scroll">
-        <div className="p-6">
+        <div className="py-4 px-6">
           <div className="mb-4 inline-flex gap-2 items-center">
             <figure className="bg-white border border-secondary-200 rounded p-2">
               <Image src="/icons/building-2-line.svg" height={24} width={24} alt="icon"/>
@@ -20,7 +20,7 @@ export default function Page() {
               <p className="text-ink-100 text-xs">Warehouse Manager</p>
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-5 h-full">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 mb-7">
             <Card 
               title="Warehouse Usage"
               icon="/icons/home-6-line.svg"
@@ -51,10 +51,10 @@ export default function Page() {
                 <h3 className="uppercase text-ink-100 text-xs">Vehicles in transit</h3>
               </div>
             </Card>
-            <div className="col-span-3">
-              <h3 className="mt-2 mb-5 text-xl">Recent Orders</h3>
-              <div className="bg-white border rounded-xl p-5 h-[700px] overflow-scroll"></div>
-            </div>
+          </div>
+          <div>
+            <h3 className="mb-5 text-xl">Recent Orders</h3>
+            <div className="bg-white border rounded-xl p-5 h-[700px] overflow-scroll"></div>
           </div>
         </div>
       </div>

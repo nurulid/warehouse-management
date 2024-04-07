@@ -48,7 +48,7 @@ const SidebarLink = (
 
 export const Sidebar = () => {
   return (
-    <section className="sidebar w-[240px] bg-secondary-75">
+    <section className="sidebar hidden lg:block w-[240px] bg-secondary-75">
       <div className="flex flex-col h-full px-6 py-8">
         <div className="mb-8 font-bold text-2xl">
           <Image src={"/brand-logo.svg"} width={32} height={32} alt="Logo" />

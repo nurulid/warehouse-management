@@ -82,7 +82,7 @@ export const Sidebar = () => {
           </ul>
         </nav>
         <div className="mt-auto">
-          <div className="dropdown">
+          <div className="dropdown mb-2">
             <UserMenu />
           </div>
           <nav className="sidebar__nav">

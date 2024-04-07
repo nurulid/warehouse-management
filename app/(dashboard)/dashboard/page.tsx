@@ -2,11 +2,12 @@ import React from "react";
 import { Search } from "./components/Search";
 import { Card } from "./components/Card";
 import Image from "next/image";
+import { CardTrack } from "./components/CardTrack";
 
 export default function Page() {
   return (
     <>
-      <div className="p-4 border-b border-secondary-200 mr-0 md:mr-6">
+      <div className="p-4 border-b border-secondary-200 mr-0 lg:mr-6">
         <Search maxWidth="558px"/>
       </div>
       <div className="h-[calc(100vh-65px)] overflow-scroll">
@@ -48,7 +49,9 @@ export default function Page() {
               pageTitle="View Tracking"
             > 
               <div>
-                <h3 className="uppercase text-ink-100 text-xs">Vehicles in transit</h3>
+                <h3 className="uppercase text-ink-100 text-xs mb-[14px]">Vehicles in transit</h3>
+                <CardTrack />
+                <CardTrack />
               </div>
             </Card>
           </div>

@@ -1,6 +1,6 @@
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import { ChevronDown, ChevronRight } from "lucide-react";
-import { motion, useTransform, useSpring } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const contentClasses = [
@@ -20,13 +20,6 @@ const labelClasses = ["py-2 px-3 mb-1", "border-b border-secondary-200"].join(
 );
 
 export const UserMenu = () => {
-  const spring = useSpring(0, {
-    stiffness: 800,
-    damping: 30,
-  });
-  const opacity = useTransform(spring, [0, 100], [0, 1]);
-  const scale = useTransform(spring, [0, 100], [0.95, 1]);
-
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger

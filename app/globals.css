@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply text-base;
+    @apply text-base text-ink-300;
   }
 }
 

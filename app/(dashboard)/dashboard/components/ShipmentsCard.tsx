@@ -22,23 +22,38 @@ export const ShipmentsCard = () => {
       pageUrl="/shipments"
       pageTitle="View Shipments"
     >
-      <div>
-        <VictoryChart domainPadding={{x : 10}}>
+      <div className="h-full border-b border-secondary-200">
+        <VictoryChart
+          padding={{ top: 20, bottom: 45, left: 40, right: 20 }}
+          domainPadding={{ x: [40, 0], y: 0 }}
+        >
           <VictoryAxis
             tickValues={[1, 2, 3, 4, 5, 6, 7]}
             tickFormat={["M", "T", "W", "T", "F", "S", "S"]}
+            style={{
+              axis: { stroke: "none" },
+              tickLabels: { fill: "#666366", fontSize: 18 },
+            }}
+            offsetY={40}
           />
-          <VictoryAxis dependentAxis tickFormat={(x) => `${x / 1000}k`} />
+          <VictoryAxis
+            dependentAxis
+            tickFormat={(x) => `${x / 1000}k`}
+            style={{
+              axis: { stroke: "none" },
+              tickLabels: { fill: "#868C98", fontSize: 18 },
+            }}
+          />
           <VictoryBar
             data={data}
             x="quarter"
             y="earnings"
             style={{
-              data: { fill: "#3F6FF2", width: 20 },
+              data: { fill: "#3F6FF2", width: 25 },
             }}
             animate={{
               duration: 2000,
-              onLoad: { duration: 1000 }
+              onLoad: { duration: 1000 },
             }}
           />
         </VictoryChart>

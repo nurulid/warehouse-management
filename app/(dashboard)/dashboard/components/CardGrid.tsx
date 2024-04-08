@@ -9,7 +9,7 @@ export const CardGrid = (
   return (
     <div className="bg-white border shadow-sm rounded-xl p-4">
       <div className="flex flex-col gap-2 h-full">
-        <div className="flex items-center gap-2 pb-4 border-b border-secondary-300">
+        <div className="flex items-center gap-2 pb-4 border-b border-secondary-200">
           <Image src={icon} width={24} height={24} alt="icon" />
           <h3>{title}</h3>
           <LinkCard url={pageUrl} title={pageTitle}/>

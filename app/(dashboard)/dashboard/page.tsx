@@ -11,7 +11,7 @@ export default function Page() {
         <Search maxWidth="558px"/>
       </div>
       <div className="h-[calc(100vh-65px)] overflow-scroll">
-        <div className="py-4 px-6">
+        <div className="py-4 px-4 sm:px-6 mb-4">
           <div className="mb-4 inline-flex gap-2 items-center">
             <figure className="bg-white border border-secondary-200 rounded p-2">
               <Image src="/icons/building-2-line.svg" height={24} width={24} alt="icon"/>

@@ -16,7 +16,7 @@ export const CardTrack = () => {
           />
         </figure>
       </div>
-      <div className="card-track__content flex-grow flex justify-between">
+      <div className="card-track__content flex-grow flex justify-between -translate-y-1">
         <div>
           <small className="text-xs text-ink-200 font-[400] mb-1">
             Truck No.

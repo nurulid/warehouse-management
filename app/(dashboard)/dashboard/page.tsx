@@ -11,8 +11,8 @@ export default function Page() {
       <div className="p-4 border-b border-secondary-200 mr-0 lg:mr-6">
         <Search maxWidth="558px"/>
       </div>
-      <div className="h-[calc(100vh-65px)] overflow-scroll">
-        <div className="py-4 px-4 sm:px-6 mb-4">
+      <div className="h-full overflow-scroll">
+        <div className="py-4 px-4 sm:px-6 mb-4 h-full">
           <div className="mb-4 inline-flex gap-2 items-center">
             <figure className="bg-white border border-secondary-200 rounded p-2">
               <Image src="/icons/building-2-line.svg" height={24} width={24} alt="icon"/>
@@ -56,9 +56,9 @@ export default function Page() {
               </div>
             </Card>
           </div>
-          <div className="relative">
+          <div className="relative h-[101%]">
             <h3 className="mb-5 text-xl">Recent Orders</h3>
-            <div className="border rounded-xl overflow-auto w-full max-h-[calc(100vh-140px)] absolute">
+            <div className="border rounded-xl overflow-auto w-full max-h-[calc(100vh-155px)] absolute top-10">
               <TableOrders />
             </div>
           </div>

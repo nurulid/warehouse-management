@@ -58,7 +58,7 @@ export default function Page() {
           </div>
           <div className="relative h-[101%]">
             <h3 className="mb-5 text-xl">Recent Orders</h3>
-            <div className="border rounded-xl overflow-auto w-full max-h-[calc(100vh-155px)] absolute top-10">
+            <div className="border rounded-xl overflow-auto w-full max-h-[calc(100vh-165px)] absolute">
               <TableOrders />
             </div>
           </div>

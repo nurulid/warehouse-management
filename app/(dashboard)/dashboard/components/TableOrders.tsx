@@ -169,7 +169,17 @@ const TableBody = (props: PropsWithChildren<{}>) => {
             <TableDataCell>{item.date}</TableDataCell>
             <TableDataCell>{item.price}</TableDataCell>
             <TableDataCell>{item.trackingId}</TableDataCell>
-            <TableDataCell addStyles="capitalize">{item.status}</TableDataCell>
+            <TableDataCell addStyles="capitalize">
+              {item.status == "out for delivery" && (
+                <span className="status-label status-label--delivery">{item.status}</span>
+              )}
+              {item.status == "in warehouse" && (
+                <span className="status-label status-label--warehouse">{item.status}</span>
+              )}
+              {item.status == "pending" && (
+                <span className="status-label status-label--pending">{item.status}</span>
+              )}
+            </TableDataCell>
           </tr>
         );
       })}

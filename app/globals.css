@@ -20,4 +20,21 @@
   .card-track:last-child {
     @apply mb-1;
   }
+
+  /* ORDER STATUS LABEL */
+  .status-label {
+    @apply py-1 px-2 rounded-full text-xs font-[500];
+  }
+
+  .status-label--delivery {
+    @apply text-success bg-success/25;
+  }
+
+  .status-label--pending {
+    @apply text-warning bg-warning/25;
+  }
+
+  .status-label--warehouse {
+    @apply text-danger bg-danger/25;
+  }
 }

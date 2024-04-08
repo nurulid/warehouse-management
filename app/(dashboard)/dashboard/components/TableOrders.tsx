@@ -79,6 +79,48 @@ const OrderData = [
     status: "pending",
   },
   {
+    id: "150",
+    date: "20 January, 2024",
+    price: "$10,000",
+    trackingId: "RSHA-IHJK-2343",
+    status: "pending",
+  },
+  {
+    id: "150",
+    date: "20 January, 2024",
+    price: "$10,000",
+    trackingId: "RSHA-IHJK-2343",
+    status: "pending",
+  },
+  {
+    id: "150",
+    date: "20 January, 2024",
+    price: "$10,000",
+    trackingId: "RSHA-IHJK-2343",
+    status: "pending",
+  },
+  {
+    id: "150",
+    date: "20 January, 2024",
+    price: "$10,000",
+    trackingId: "RSHA-IHJK-2343",
+    status: "pending",
+  },
+  {
+    id: "150",
+    date: "20 January, 2024",
+    price: "$10,000",
+    trackingId: "RSHA-IHJK-2343",
+    status: "pending",
+  },
+  {
+    id: "150",
+    date: "20 January, 2024",
+    price: "$10,000",
+    trackingId: "RSHA-IHJK-2343",
+    status: "pending",
+  },
+  {
     id: "150end",
     date: "20 January, 2024",
     price: "$10,000",
@@ -137,7 +179,7 @@ const TableBody = (props: PropsWithChildren<{}>) => {
 
 export const TableOrders = () => {
   return (
-    <table className="table-fixed border-collapse border-spacing-0 w-full min-w-[820px] max-h-[300px] h-full">
+    <table className="bg-white table-fixed border-collapse border-spacing-0 w-full min-w-[820px]">
       <TableHead />
       <TableBody />
     </table>

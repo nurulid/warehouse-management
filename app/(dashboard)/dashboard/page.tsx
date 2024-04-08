@@ -4,6 +4,7 @@ import { Search } from "./components/Search";
 import { CardGrid } from "./components/CardGrid";
 import { CardTrack } from "./components/CardTrack";
 import { TableOrders } from "./components/TableOrders";
+import { ShipmentsCard } from "./components/ShipmentsCard";
 
 export default function Page() {
   return (
@@ -33,16 +34,7 @@ export default function Page() {
                 CHART
               </div>
             </CardGrid>
-            <CardGrid 
-              title="Total Shipments"
-              icon="/icons/bar-chart-2-line.svg"
-              pageUrl="/shipments"
-              pageTitle="View Shipments"
-            > 
-              <div>
-                CHART
-              </div>
-            </CardGrid>
+            <ShipmentsCard />
             <CardGrid 
               title="Vehicle Tracking"
               icon="/icons/focus-3-line.svg"

@@ -31,7 +31,7 @@
   }
 
   .status-label--pending {
-    @apply text-warning bg-warning/25;
+    @apply text-warning bg-warning/20;
   }
 
   .status-label--warehouse {

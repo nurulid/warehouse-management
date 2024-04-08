@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Search } from "./components/Search";
-import { Card } from "./components/Card";
+import { CardGrid } from "./components/CardGrid";
 import { CardTrack } from "./components/CardTrack";
 import { TableOrders } from "./components/TableOrders";
 
@@ -23,7 +23,7 @@ export default function Page() {
             </div>
           </div>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 mb-7">
-            <Card 
+            <CardGrid 
               title="Warehouse Usage"
               icon="/icons/home-6-line.svg"
               pageUrl="/products"
@@ -32,8 +32,8 @@ export default function Page() {
               <div>
                 CHART
               </div>
-            </Card>
-            <Card 
+            </CardGrid>
+            <CardGrid 
               title="Total Shipments"
               icon="/icons/bar-chart-2-line.svg"
               pageUrl="/shipments"
@@ -42,8 +42,8 @@ export default function Page() {
               <div>
                 CHART
               </div>
-            </Card>
-            <Card 
+            </CardGrid>
+            <CardGrid 
               title="Vehicle Tracking"
               icon="/icons/focus-3-line.svg"
               pageUrl="/vehicles"
@@ -54,7 +54,7 @@ export default function Page() {
                 <CardTrack />
                 <CardTrack />
               </div>
-            </Card>
+            </CardGrid>
           </div>
           <div className="relative h-[101%]">
             <h3 className="mb-5 text-xl">Recent Orders</h3>

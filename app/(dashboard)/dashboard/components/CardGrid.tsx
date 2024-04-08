@@ -1,9 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
 import React, { PropsWithChildren } from "react";
 import { LinkCard } from "./LinkCard";
 
-export const Card = (
+export const CardGrid = (
   props: PropsWithChildren<{ title: string; icon: string; pageUrl: string, pageTitle: string }>
 ) => {
   const { title, icon, pageUrl, pageTitle, children } = props;

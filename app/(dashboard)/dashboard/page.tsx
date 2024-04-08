@@ -1,8 +1,9 @@
 import React from "react";
+import Image from "next/image";
 import { Search } from "./components/Search";
 import { Card } from "./components/Card";
-import Image from "next/image";
 import { CardTrack } from "./components/CardTrack";
+import { TableOrders } from "./components/TableOrders";
 
 export default function Page() {
   return (
@@ -55,9 +56,11 @@ export default function Page() {
               </div>
             </Card>
           </div>
-          <div>
+          <div className="relative">
             <h3 className="mb-5 text-xl">Recent Orders</h3>
-            <div className="bg-white border rounded-xl p-5 h-[700px] overflow-scroll"></div>
+            <div className="bg-white border rounded-xl overflow-auto w-full h-[calc(100vh-75px)] absolute mb-50px">
+              <TableOrders />
+            </div>
           </div>
         </div>
       </div>

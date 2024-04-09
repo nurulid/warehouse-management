@@ -37,4 +37,13 @@
   .status-label--warehouse {
     @apply text-danger bg-danger/25;
   }
+
+  .usage-chart #pie-labels-0 {
+    @apply hidden;
+  }
+
+  .usage-chart svg {
+    width: auto !important;
+    margin: auto;
+  }
 }

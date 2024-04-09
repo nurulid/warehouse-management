@@ -5,6 +5,7 @@ import { CardGrid } from "./components/CardGrid";
 import { CardTrack } from "./components/CardTrack";
 import { TableOrders } from "./components/TableOrders";
 import { ShipmentsCard } from "./components/ShipmentsCard";
+import { UsageCard } from "./components/UsageCard";
 
 export default function Page() {
   return (
@@ -24,16 +25,7 @@ export default function Page() {
             </div>
           </div>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 mb-7">
-            <CardGrid 
-              title="Warehouse Usage"
-              icon="/icons/home-6-line.svg"
-              pageUrl="/products"
-              pageTitle="View Usage"
-            > 
-              <div>
-                CHART
-              </div>
-            </CardGrid>
+            <UsageCard />
             <ShipmentsCard />
             <CardGrid 
               title="Vehicle Tracking"

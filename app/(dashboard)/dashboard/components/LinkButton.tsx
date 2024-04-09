@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from "react";
 import Link from "next/link";
 
-export const LinkCard = (
+export const LinkButton = (
   props: PropsWithChildren<{ url: string; title: string }>
 ) => {
   const { url, title } = props;

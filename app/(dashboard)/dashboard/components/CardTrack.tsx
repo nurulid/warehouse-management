@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { LinkCard } from "./LinkCard";
+import { LinkButton } from "./LinkButton";
 
 export const CardTrack = () => {
   return (
@@ -15,6 +15,7 @@ export const CardTrack = () => {
           />
         </figure>
       </div>
+      {/* TODO: breakdown */}
       <div className="card-track__content flex-grow flex justify-between -translate-y-1">
         <div>
           <small className="text-xs text-ink-200 font-[400] mb-1">
@@ -27,7 +28,7 @@ export const CardTrack = () => {
           <p className="text-sm">RXSJ-SIEI-SIII</p>
         </div>
         <div className="translate-y-2">
-          <LinkCard url="#" title="Track Vehicle" />
+          <LinkButton url="#" title="Track Vehicle" />
         </div>
       </div>
     </div>
